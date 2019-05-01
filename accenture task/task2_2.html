@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">
+  <img src="smiley.png" alt="smiley" style="width:42px;height:42px;border:0">
+</a>
+<a href="https://en.wikipedia.org/wiki/Smiley">Wanna read more about smiley</a>
+<script>
+var allAnchors = document.getElementsByTagName("a");
+for (i=0; i < allAnchors.length; i++) {
+	var element = allAnchors[i];
+	element.addEventListener("click", function (event) {
+    event.preventDefault();
+	let ref = this.getAttribute("href");
+	//alert(ref);
+	window.open(ref,'MyWindow',width=600,height=300);
+  });
+}
+</script>
+</body>
+</html>
